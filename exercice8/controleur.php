@@ -10,7 +10,6 @@
 <body>
 <?php
 include_once 'fonction.php';
-
 $n=$_POST['a'];
 testSaisi($n);
 ?>

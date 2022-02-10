@@ -8,11 +8,10 @@
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    
-    <?php
-    include_once 'fonction.php';
-    $n=$_POST['a'];
-    testeSaisi($n);
-    ?>
- </body>
+    <form action="controleur.php" method="post">
+        <label for="">Saisir la langue:</label>
+        <input type="text" name="langue" id=""><br>
+        <input type="submit" value="ok" name="btn">
+    </form>
+</body>
 </html>

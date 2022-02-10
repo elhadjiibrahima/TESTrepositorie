@@ -1,0 +1,14 @@
+table{
+    /* border: solid; */
+    width: 80vw;
+
+}
+td{
+    border: solid;
+}
+body{
+    background-image: url(image.jpg);
+}
+form{
+    border: solid;
+}

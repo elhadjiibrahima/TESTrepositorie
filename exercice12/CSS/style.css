@@ -1,0 +1,12 @@
+table{
+    border: solid;
+    width: 500px;
+    height: 500px;
+}
+tr{
+    border: solid;
+}
+td{
+    border: solid;
+    font-size: 2rem;
+}

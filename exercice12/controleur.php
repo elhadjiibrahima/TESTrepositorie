@@ -8,11 +8,10 @@
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    
-    <?php
-    include_once 'fonction.php';
-    $n=$_POST['a'];
-    testeSaisi($n);
-    ?>
- </body>
+  <?php
+      include_once 'fonction.php';
+      $n=$_POST['langue'];
+      testDeSaisie($n);
+  ?>
+</body>
 </html>

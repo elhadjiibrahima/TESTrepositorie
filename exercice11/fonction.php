@@ -6,16 +6,22 @@
             }
             else{
                 if(is_numeric($_POST['a'])){ 
-                  if ($n<10000) {
+                  if ($n<10) {
                 header('location:index.php');
                   }
                   else {
                     //   $premier=recuperationDesElements($n);
                     //   var_dump( affichage($premier));
                     //   echo 'les nombres premiers sont:<br> ';
-                  print_r( recuperationDesElements($n));
+                //   print_r( recuperationDesElements($n));
                 //   print_r( superieur($premier));
                 // echo moyenne($premier);
+                echo afficheTableau(recuperationDesElements($n)).'<br>';
+                echo 'la moyenne est '. moyenne(recuperationDesElements($n)).'<br>';
+                echo 'les nombre inferieur sont: <br>';
+                echo afficheTableau(inferieur(recuperationDesElements($n))).'<br>';
+                echo 'les nombre superieur sont: <br>';
+                echo afficheTableau(superieur(recuperationDesElements($n))).'<br>';
 
                   }
                    } 
@@ -75,19 +81,17 @@
     }
     return $tabbb;
 }
-function affichage(array $nbr):array{
-    $nbr=array();
-    '<table>';
-     foreach($nbr as $valeur){
-         ' <tr>';
-         '<td>';
-         $nbr[]=$valeur;
-         '</td>';
-         '</tr>';
-        }
-         '</table>';
-         return $nbr;
-    
+
+function afficheTableau(array $tabb):string{
+    $taille=count($tabb);
+    $afficher='<table>';
+    for($i=1;$i<=$taille;$i++){
+        if($i%15==1){$afficher.='<tr>';}
+        $afficher.='<td>'.$tabb[$i-1].'</td>';
+        if($i%15==0){$afficher.='</tr>';}
+    }
+    $afficher.='</table>';
+    return $afficher;
 }
    
 ?>
