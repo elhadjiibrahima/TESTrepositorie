@@ -1,0 +1,15 @@
+body{
+    background-image: url(./image.jpg);
+    display: grid;
+}
+form{
+    background-color: aliceblue;
+    width: 20%;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    margin-top: 15%;
+    grid-area: auto;
+}

@@ -1,0 +1,9 @@
+body{
+    background-color: orange;
+}
+form{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    grid-area: auto;
+}

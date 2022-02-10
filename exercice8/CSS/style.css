@@ -1,0 +1,16 @@
+body{
+    background-color: aqua;
+}
+form{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    margin-top: 15%;
+    grid-area: auto;
+}
+ul{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+   
+}
