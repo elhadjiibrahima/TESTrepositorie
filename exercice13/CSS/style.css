@@ -1,0 +1,11 @@
+body{
+    background-color: blanchedalmond;
+}
+div{
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+}
+form{
+    margin: 1rem;
+}
